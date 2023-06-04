@@ -1,7 +1,7 @@
 package com.bank.authorization.service;
 
 import com.bank.authorization.dto.AuditDto;
-import com.bank.authorization.entity.AuditEntity;
+import com.bank.authorization.repository.entity.AuditEntity;
 
 /**
  * Сервис для {@link AuditEntity}

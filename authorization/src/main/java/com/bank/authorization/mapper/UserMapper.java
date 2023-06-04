@@ -1,7 +1,7 @@
 package com.bank.authorization.mapper;
 
 import com.bank.authorization.dto.UserDto;
-import com.bank.authorization.entity.UserEntity;
+import com.bank.authorization.repository.entity.UserEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

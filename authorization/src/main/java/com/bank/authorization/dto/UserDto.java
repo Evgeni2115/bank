@@ -1,6 +1,6 @@
 package com.bank.authorization.dto;
 
-import com.bank.authorization.entity.UserEntity;
+import com.bank.authorization.repository.entity.UserEntity;
 
 import java.io.Serializable;
 

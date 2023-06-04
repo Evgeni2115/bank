@@ -1,6 +1,6 @@
 package com.bank.authorization.dto;
 
-import com.bank.authorization.entity.AuditEntity;
+import com.bank.authorization.repository.entity.AuditEntity;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

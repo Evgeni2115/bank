@@ -1,6 +1,6 @@
 package com.bank.authorization.repository;
 
-import com.bank.authorization.entity.UserEntity;
+import com.bank.authorization.repository.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

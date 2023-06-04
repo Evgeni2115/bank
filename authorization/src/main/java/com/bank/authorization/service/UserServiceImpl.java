@@ -1,7 +1,7 @@
 package com.bank.authorization.service;
 
 import com.bank.authorization.dto.UserDto;
-import com.bank.authorization.entity.UserEntity;
+import com.bank.authorization.repository.entity.UserEntity;
 import com.bank.authorization.mapper.UserMapper;
 import com.bank.authorization.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

@@ -1,7 +1,7 @@
 package com.bank.authorization.service;
 
 import com.bank.authorization.dto.UserDto;
-import com.bank.authorization.entity.UserEntity;
+import com.bank.authorization.repository.entity.UserEntity;
 
 import java.util.List;
 

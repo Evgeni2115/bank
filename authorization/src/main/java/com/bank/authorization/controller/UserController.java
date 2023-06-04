@@ -1,7 +1,7 @@
 package com.bank.authorization.controller;
 
 import com.bank.authorization.dto.UserDto;
-import com.bank.authorization.entity.UserEntity;
+import com.bank.authorization.repository.entity.UserEntity;
 import com.bank.authorization.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

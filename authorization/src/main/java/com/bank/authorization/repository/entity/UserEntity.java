@@ -1,4 +1,4 @@
-package com.bank.authorization.entity;
+package com.bank.authorization.repository.entity;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
