@@ -12,7 +12,7 @@ import java.util.List;
 public class EntityNotFoundSupplier {
 
     public EntityNotFoundException getException(String message, Long id) {
-        return new EntityNotFoundException(id + message);
+        return new EntityNotFoundException(message + id);
     }
 
     public <T> void checkForSizeAndLogging(String message, List<Long> ids, List<T> entities) {
