@@ -3,6 +3,8 @@ package com.bank.transfer.controller;
 import com.bank.transfer.dto.PhoneTransferDto;
 import com.bank.transfer.entity.PhoneTransferEntity;
 import com.bank.transfer.service.PhoneTransferService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/phone")
+@Tag(name = "контроллер для переводов по номеру телефона")
 public class PhoneTransferController {
 
     private final PhoneTransferService service;
@@ -31,6 +34,7 @@ public class PhoneTransferController {
      * @return {@link ResponseEntity} c листом {@link PhoneTransferDto}
      */
     @GetMapping("/read/all")
+    @Operation(summary = "получение списка переводов по номеру телефона по их id")
     public ResponseEntity<List<PhoneTransferDto>> readAll(@RequestParam List<Long> ids) {
         return ResponseEntity.ok(service.findAllById(ids));
     }
@@ -40,6 +44,7 @@ public class PhoneTransferController {
      * @return {@link ResponseEntity} {@link PhoneTransferDto}
      */
     @GetMapping("/read/{id}")
+    @Operation(summary = "получение перевода по номеру телефона по его id")
     public PhoneTransferDto read(@PathVariable("id") Long id) {
         return service.findById(id);
     }
@@ -49,6 +54,7 @@ public class PhoneTransferController {
      * @return {@link ResponseEntity } {@link PhoneTransferDto}
      */
     @PostMapping("/create")
+    @Operation(summary = "создание перевода по номеру телефона")
     public ResponseEntity<PhoneTransferDto> create(@RequestBody PhoneTransferDto phoneTransfer) {
         return ResponseEntity.ok(service.save(phoneTransfer));
     }
@@ -59,6 +65,7 @@ public class PhoneTransferController {
      * @return {@link ResponseEntity} {@link PhoneTransferDto}
      */
     @PutMapping("/update/{id}")
+    @Operation(summary = "обновление перевода по номеру телефона")
     public ResponseEntity<PhoneTransferDto> update(@PathVariable("id") Long id,
                                                    @RequestBody PhoneTransferDto phoneTransfer) {
         return ResponseEntity.ok(service.update(id, phoneTransfer));
